@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = ["protocols", "server-http"]
+default-members = ["server-http"]
+
+exclude = []
+
+[workspace.package]
+publish = false
+edition = "2021"
+rust-version = "1.78"
+
+[workspace.dependencies]
+protocols = { path = "./protocols" }
+
+actix-protobuf = "0.11.0"
+actix-web = "4.4"
+prost = { version = "0.13.3", features = ["prost-derive"] }
+prost-types = { version = "0.13.3" }
+prost-build = "0.13.3"

@@ -1,0 +1,11 @@
+[package]
+name = "server-http"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+protocols = { workspace = true }
+
+actix-protobuf = { workspace = true }
+actix-web = { workspace = true }
+prost = { workspace = true }
